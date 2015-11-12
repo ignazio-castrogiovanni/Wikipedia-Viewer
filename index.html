@@ -1,0 +1,20 @@
+
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src = "main.js"> </script>
+</head>
+  <body ng-app = 'jsonApp'>
+  <div>
+    <h1></h1>
+
+  </div>
+		<div ng-controller = "jsonCtrl">
+			 Info to search: <input type = "text" ng-model = "wikipediaEntry">
+			<p> {{ wikipediaEntry }} </p>
+			{{getEntryInfo()}}
+
+		</div>
+
+	</body>
+</html>
